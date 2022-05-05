@@ -1,0 +1,314 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    width: 100px;
+}
+
+html {
+    width: 100%;
+}
+
+.all {
+    display: flex;
+}
+
+.teste {
+    display: flex;
+    width: 70%;
+}
+
+aside {
+    width: 30%;
+}
+
+figcaption {
+    display: none;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bolder;
+    padding-top: 14px;
+}
+
+p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 12px;
+    line-height: 16px;
+    color: #828282;
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+
+h5 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2E245E;
+}
+
+input {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: black;
+    border-color: transparent;
+    padding-top: 20px;
+}
+
+
+/* CABEÇALHO */
+
+.top {
+    background-image: url(/src/img/header\ cover.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+.top h1 {
+    color: #253830e8;
+    font-family: 'Koulen', cursive;
+    font-size: 50px;
+    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 53px;
+    padding-bottom: 30px;
+}
+
+.imgLogo {
+    position: absolute;
+    margin: 10px 20px;
+    padding-top: 20px;
+}
+
+.filtersContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+}
+
+.estiloGeralBotoes {
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    font-size: 0.9rem;
+}
+
+.estiloGeralBotoes--mostrarTodos {
+    color: black;
+    background-color: #d3d3d3;
+}
+
+.estiloGeralBotoes--mostrarTodos:hover {
+    color: black;
+    background-color: darkgreen;
+    transition: background 1s;
+}
+
+.estiloGeralBotoes--filtrarCamiseta {
+    background-color: #d3d3d3;
+    color: black;
+}
+
+.estiloGeralBotoes--filtrarCamiseta:hover {
+    color: black;
+    background-color: darkgreen;
+    transition: background 1s;
+}
+
+.estiloGeralBotoes--filtrarAcessorios {
+    background-color: #d3d3d3;
+    color: black;
+}
+
+.estiloGeralBotoes--filtrarAcessorios:hover {
+    color: black;
+    background-color: darkgreen;
+    transition: background 1s;
+}
+
+.containerBuscaPorNome {
+    display: flex;
+    justify-content: space-between;
+}
+
+.campoBuscaPorNome {
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #d3d3d3;
+    padding: 0 10px;
+}
+
+.estiloGeralBotoes--botaoBuscaPorNome {
+    background-color: palegreen;
+    color: black;
+    border-radius: 0 5px 5px 0;
+}
+
+.estiloGeralBotoes--botaoBuscaPorNome:hover {
+    cursor: pointer;
+    background-color: darkgreen;
+    transition: background 1s;
+}
+
+.addBtn {
+    font-size: 11px;
+}
+
+
+/* CONTEÚDO */
+
+main {
+    display: flex;
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 100%;
+    background-image: linear-gradient(to left top, #ced2d6, #dbdde0, #e7e8ea, #f3f3f5, #ffffff);
+}
+
+.containerListaProdutos {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.containerListaProdutos ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: self-end;
+}
+
+.containerListaProdutos ul li:not(ol li) {
+    color: black;
+    font-weight: bold;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: ease-in-out .1s;
+    width: 30%;
+}
+
+.containerListaProdutos ul li:not(ol li):hover {
+    box-shadow: 3px 3px 13px 1px rgb(146 146 146);
+}
+
+.containerListaProdutos ul li img {
+    width: 100%;
+    max-width: 80px;
+    padding-bottom: 31px;
+}
+
+.containerListaProdutos ul li h3 {
+    font-size: 1.5rem;
+}
+
+.containerListaProdutos ul li p {
+    font-size: 1.5rem;
+}
+
+.containerListaProdutos ul li span {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.containerListaProdutos ul li button {
+    background-color: #009f5a;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    height: 50px;
+}
+
+.containerListaProdutos ul li button:hover {
+    box-shadow: 1px 1px 2px rgb(189, 189, 189);
+}
+
+.containerListaProdutos ul li ol {
+    list-style: inside decimal;
+    text-align: left;
+}
+
+.containerListaProdutos ul li ol li {
+    font-size: 12px;
+    margin: 7px 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: -webkit-center;
+}
+
+
+/* PREÇO TOTAL */
+
+.containerPrecoTotal {
+    text-align: center;
+    margin: 40px 0 30px;
+}
+
+.containerPrecoTotal p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.containerCarrinho {
+    width: 450px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.containerCarrinho img {
+    max-width: 88px;
+}
+
+.containerCarrinho ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerCarrinho button {
+    display: none;
+}
+
+.containerCarrinho p {
+    font-size: 15px;
+    padding-left: 24px;
+}
+
+.containerCarrinho li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+.containerCarrinho li span {
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.containerCarrinho li ol {
+    display: none;
+}
